@@ -151,7 +151,58 @@ footer {
 footer a:link {
 	color: grey;
 }
+img.banner {
+   display: flex;
+}
+/*
+*========================
+  * Mobile Hamburger Menu
+*========================
+*/
+#navigation {
+   width: 100%;
+   background: #222222;
+}
+#navigation a {
+   color: #fff;
+   text-decoration: none;
+}
+#navigation label, #hamburger {
+   display: none;
+ }
+/*
+*================
+  * Media Queries
+*================
+*/
+@media screen and (max-width: 768px){
 
+   .content {
+      padding: 65px 40px 20px 40px;
+   }
+   #navigation {
+      position: absolute;
+   }
+   #navigation .menu {
+      display: none;
+      }
+   #navigation .menu a {
+      border-bottom: 1px solid #333;
+      width: 100%;
+   }
+   #navigation input:checked ~ .menu {
+      background-color: #222222;
+      display: block;
+   }
+   #navigation label {
+      cursor: pointer;
+      display: block;
+      color: #fff;
+      font-style: normal;
+      font-size: 20px;
+      float: right;
+      padding: 5px 30px 5px 0;
+   }
 
-
-	
+}
+  
